@@ -1,0 +1,38 @@
+.converter {
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__input {
+        padding: 20px;
+        display: flex;
+        outline: 2px solid grey;
+        border-radius: 20px;
+        font-size: 20vmin; 
+        
+        .input {
+            
+            &__hour {
+                font-size: 20vmin; 
+                text-align: center;
+                margin: 10px;
+            }
+            
+            &__minute {
+                text-align: center;
+                font-size: 20vmin; 
+                margin: 10px;
+            }
+        }
+    }
+
+    &__result {
+        .result {
+            &__text {
+                font-size: 3rem;
+            }
+        }
+    }
+}
