@@ -1,3 +1,5 @@
+@import '../../style/fonts';
+
 .converter {
     height: calc(100vh - 50px);
     display: flex;
@@ -6,23 +8,31 @@
     align-items: center;
 
     &__input {
+        width: 80vw;
         padding: 20px;
         display: flex;
         outline: 2px solid grey;
         border-radius: 20px;
-        font-size: 20vmin; 
+
+        &:first-child {
+            font-size: 6rem;
+            text-align: center;
+            margin: 10px;
+        }
         
         .input {
             
             &__hour {
-                font-size: 20vmin; 
+                width: 100%;
+                font-size: 6rem; 
                 text-align: center;
                 margin: 10px;
             }
             
             &__minute {
+                width: 100%;
                 text-align: center;
-                font-size: 20vmin; 
+                font-size: 6rem; 
                 margin: 10px;
             }
         }
@@ -32,6 +42,7 @@
         .result {
             &__text {
                 font-size: 3rem;
+                font-family: $poppins;
             }
         }
     }
