@@ -8,8 +8,6 @@ export function Converter ({initialDate}) {
     const [minute, setMinute] = useState(1);
     const [ date, setDate ] = useState(initialDate);
 
-    console.log('date: ',date)
-
     useEffect (() => {
         setHour(initialDate.hour);
         setMinute(initialDate.minute);
