@@ -1,5 +1,5 @@
 .converter {
-  height: calc(100vh - 50px);
+  height: calc(100vh - 172px);
   background-color: #367bd6;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14,11 +14,12 @@
 }
 
 .converter__instructions * {
+  margin-top: 20px;
   color: #fff;
 }
 
 .converter__input {
-  width: 60vw;
+  width: 300px;
   margin-top: 5vh;
   padding: 20px;
   display: -webkit-box;
@@ -30,10 +31,14 @@
 
 .converter__input .input__hour {
   width: 100%;
+  border-radius: 10px;
+  border: none;
 }
 
 .converter__input .input__minute {
   width: 100%;
+  border-radius: 10px;
+  border: none;
 }
 
 .converter__input * {

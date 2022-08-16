@@ -1,12 +1,19 @@
 @import './style/colors';
 
-.App {
+*,*::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  background-color: $background;
+}
+
+.App {
     text-align: center;
 
   &__header {    
-
-    background-color: $header-background;
     height: 50px;
     display: flex;
     flex-direction: column;
