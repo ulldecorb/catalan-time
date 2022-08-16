@@ -1,5 +1,6 @@
 .converter {
   height: calc(100vh - 50px);
+  background-color: #367bd6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7,46 +8,66 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
+.converter__instructions * {
+  color: #fff;
+}
+
 .converter__input {
-  width: 80vw;
+  width: 60vw;
+  margin-top: 5vh;
   padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  outline: 2px solid grey;
+  outline: 6px solid #fff;
   border-radius: 20px;
-}
-
-.converter__input:first-child {
-  font-size: 6rem;
-  text-align: center;
-  margin: 10px;
 }
 
 .converter__input .input__hour {
   width: 100%;
-  font-size: 6rem;
-  text-align: center;
-  margin: 10px;
 }
 
 .converter__input .input__minute {
   width: 100%;
+}
+
+.converter__input * {
+  font-size: 3rem;
   text-align: center;
-  font-size: 6rem;
   margin: 10px;
+}
+
+.converter__input p {
+  color: #fff;
 }
 
 .converter__result .result__text {
   font-size: 3rem;
   font-family: "Poppins", sans-serif;
+  color: #fff;
+  margin-top: 5vh;
+}
+
+@media (max-width: 780px) {
+  .converter .result__text {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .converter .result__text {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .converter .result__text {
+    font-size: 1.2rem;
+  }
 }
 /*# sourceMappingURL=converter.css.map */

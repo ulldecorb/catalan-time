@@ -3,7 +3,7 @@
 }
 
 .App__header {
-  background-color: #812424;
+  background-color: #1a55a1;
   height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23,6 +23,6 @@
 }
 
 .App__title {
-  color: #ffd194;
+  color: #fff;
 }
 /*# sourceMappingURL=App.css.map */

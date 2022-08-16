@@ -28,6 +28,11 @@ export function Converter ({initialDate}) {
 
     return (
         <main className='converter'>
+            <section className="converter__instructions">
+                <p className="instructions">
+                    Select time to get the catalan time formula 
+                </p>
+            </section>
             <section className='converter__input'>
                 <input type="number" value={hour} className='input__hour' name="handler-hour" id="handler-hour" max="12" min="1" onChange={(e) => hourHandler(e)} />
                 <p>:</p>

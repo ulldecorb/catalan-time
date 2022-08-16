@@ -1,15 +1,14 @@
 // CATALAN TIME LOGIC
 
-// const actualDate = { hour: 1, minute: 15 };
-
 export function dateConverter (date) {
     const { hour, minute } = date;
     let convertedDate = '';
 
-    if (minute>= 55 | minute <= 9) convertedDate = `${hour === 1 ? 'La 1' : `Les ${hour}`}${getMinute(minute)}`;
+    if (minute <= 9) convertedDate = `${hour === 1 ? 'La 1' : `Les ${hour}`}${getMinute(minute)}`;
     if (minute>= 10 && minute <= 24) convertedDate = `Un quart${getMinute(minute)} de ${hour + 1 === 13 ? 1 : hour + 1}`;
     if (minute>= 25 && minute <= 39) convertedDate = `Dos quarts${getMinute(minute)} de ${hour + 1 === 13 ? 1 : hour + 1}`;
     if (minute>= 40 && minute <= 54) convertedDate = `Tres quarts${getMinute(minute)} de ${hour + 1 === 13 ? 1 : hour + 1}`;
+    if (minute>= 55) convertedDate = `${hour === 12 ? 'La 1' : `Les ${hour +1 }`}${getMinute(minute)}`;
     if (!minute) convertedDate = `${hour} en punt`;
 
     return convertedDate;
@@ -28,9 +27,3 @@ export function getMinute ( minute ) {
 
     return convertedMinute;
 }
-
-// const Minute = getMinute(26)
-//  Minute //menys 4 minuts
-
-// const catalanDate = dateConverter( actualDate );
-//  catalanDate // Un quart de 3
