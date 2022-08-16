@@ -1,12 +1,13 @@
 @import './style/colors';
 
-.App {
+body {
+  background-color: $header-background;
+}
 
+.App {
     text-align: center;
 
   &__header {    
-
-    background-color: $header-background;
     height: 50px;
     display: flex;
     flex-direction: column;

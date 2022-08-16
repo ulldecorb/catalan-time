@@ -5,6 +5,7 @@ import {
   Route
 } from 'react-router-dom';
 import './App.css';
+import Navbar from './components/navbar';
 import Converter from './components/converter';
 import Tutorial from './components/tutorial';
 import Practice from './components/practice';
@@ -25,6 +26,7 @@ function App() {
   return (    
       <Router>
     <div className="App">
+      <Navbar />
       <header className="App__header">
         <h1 className='App__title'>CATALAN TIME</h1>
       </header>

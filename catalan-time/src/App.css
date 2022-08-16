@@ -1,9 +1,12 @@
+body {
+  background-color: #1a55a1;
+}
+
 .App {
   text-align: center;
 }
 
 .App__header {
-  background-color: #1a55a1;
   height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
