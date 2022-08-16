@@ -1,10 +1,12 @@
+@import './style/colors';
+
 .App {
 
     text-align: center;
 
   &__header {    
 
-    background-color: #812424;
+    background-color: $header-background;
     height: 50px;
     display: flex;
     flex-direction: column;
@@ -15,7 +17,7 @@
   }
 
   &__title {
-    color: rgb(255, 209, 148);
+    color: $header;
 
   }
 }

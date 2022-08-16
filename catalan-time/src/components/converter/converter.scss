@@ -1,41 +1,45 @@
 @import '../../style/fonts';
+@import '../../style/colors';
 
 .converter {
     height: calc(100vh - 50px);
+    background-color: $background;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 
+    &__instructions * {
+        color: $text;
+    }
+
     &__input {
-        width: 80vw;
+        width: 60vw;
+        margin-top: 5vh;
         padding: 20px;
         display: flex;
-        outline: 2px solid grey;
+        outline: 6px solid #fff;
         border-radius: 20px;
-
-        &:first-child {
-            font-size: 6rem;
-            text-align: center;
-            margin: 10px;
-        }
         
         .input {
             
             &__hour {
                 width: 100%;
-                font-size: 6rem; 
-                text-align: center;
-                margin: 10px;
             }
             
             &__minute {
                 width: 100%;
-                text-align: center;
-                font-size: 6rem; 
-                margin: 10px;
             }
         }
+    }
+
+    &__input * {        
+        font-size: 3rem;
+        text-align: center;
+        margin: 10px;
+    }
+
+    &__input p {
+        color: #fff;
     }
 
     &__result {
@@ -43,7 +47,33 @@
             &__text {
                 font-size: 3rem;
                 font-family: $poppins;
+                color: $result;
+                margin-top: 5vh;
             }
+        }
+    }
+}
+
+@media (max-width: 780px) {
+    .converter {
+        .result__text {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .converter {
+        .result__text {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .converter {
+        .result__text {
+            font-size: 1.2rem;
         }
     }
 }
