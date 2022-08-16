@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './navbar.css';
 
 export function Navbar() {
   return (
@@ -8,21 +9,21 @@ export function Navbar() {
       <nav className="header__navbar">
         <Link
           to="/"
-          type="button"
+        //   type="button"
           className="navbar__handler"
         >
           HOME
         </Link>
         <Link
           to="/tutorial"
-          type="button"
+        //   type="button"
           className="navbar__handler"
         >
           TUTORIAL
         </Link>
         <Link
           to="/practice"
-          type="button"
+        //   type="button"
           className="navbar__handler"
         >
           PRACTICE

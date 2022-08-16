@@ -1,20 +1,5 @@
-*, *::before, *::after {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  background-color: #367bd6;
-}
-
-.App {
-  text-align: center;
-}
-
-.App__header {
-  height: 50px;
+.header {
+  height: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,10 +14,25 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: calc(10px + 2vmin);
+  background-color: #1a55a1;
   color: white;
+  padding: 10px;
+  border-bottom: 2px solid #fff;
 }
 
-.App__title {
+.header__title {
   color: #fff;
 }
-/*# sourceMappingURL=App.css.map */
+
+.header__navbar * {
+  margin: 0 5px 0 5px;
+  color: #fff;
+  padding: 5px;
+}
+
+.header__navbar *:hover {
+  background-color: #fff;
+  border-radius: 10px;
+  color: grey;
+}
+/*# sourceMappingURL=navbar.css.map */

@@ -1,3 +1,4 @@
+/* eslint-disable no-use-before-define */
 // CATALAN TIME LOGIC
 
 export function dateConverter(date) {
@@ -9,7 +10,7 @@ export function dateConverter(date) {
   if (minute >= 25 && minute <= 39) convertedDate = `Dos quarts${getMinute(minute)} de ${hour + 1 === 13 ? 1 : hour + 1}`;
   if (minute >= 40 && minute <= 54) convertedDate = `Tres quarts${getMinute(minute)} de ${hour + 1 === 13 ? 1 : hour + 1}`;
   if (minute >= 55) convertedDate = `${hour === 12 ? 'La 1' : `Les ${hour + 1}`}${getMinute(minute)}`;
-  if (!minute) convertedDate = `${hour} en punt`;
+  if (!minute) convertedDate = `${hour === 1 ? 'La 1' : `Les ${hour}`} en punt`;
 
   return convertedDate;
 }

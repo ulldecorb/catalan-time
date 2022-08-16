@@ -27,9 +27,6 @@ function App() {
     <Router>
       <div className="App">
         <Navbar />
-        <header className="App__header">
-          <h1 className="App__title">CATALAN TIME</h1>
-        </header>
         <Routes>
           <Route
             path="/"
