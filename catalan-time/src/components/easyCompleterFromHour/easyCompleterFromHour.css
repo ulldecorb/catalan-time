@@ -1,0 +1,47 @@
+.quiz {
+  width: 300px;
+}
+
+.quiz * {
+  font-family: "Poppins", sans-serif;
+}
+
+.quiz__statement {
+  color: #fff;
+}
+
+.quiz__input-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 4px;
+}
+
+.quiz__submit {
+  border-radius: 10px;
+  padding: 3px;
+  background-color: #e0e0e0;
+}
+
+.quiz__solution {
+  visibility: hidden;
+}
+
+.quiz__solution--correct {
+  visibility: visible;
+  background-color: green;
+  color: white;
+}
+
+.quiz__solution--fail {
+  visibility: visible;
+  background-color: red;
+  color: yellow;
+}
+/*# sourceMappingURL=easyCompleterFromHour.css.map */
