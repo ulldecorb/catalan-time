@@ -1,0 +1,47 @@
+@import '../../style/colors';
+@import '../../style/fonts';
+
+.quiz {
+
+    width: 300px;
+    & * {
+        font-family: $poppins;
+    }
+
+    &__statement {
+        color: $text;
+    }
+
+    &__input-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 4px;
+
+    }
+
+    &__submit {
+        border-radius: 10px;
+        padding: 3px;
+        background-color: rgb(224, 224, 224);
+    }
+
+    &__solution {
+            visibility: hidden;
+
+        &--correct {
+            visibility: visible;
+            background-color: green;
+            color: white;
+        }
+        
+        &--fail {
+            visibility: visible;
+            background-color: red;
+            color: yellow;
+            
+        }
+    }
+
+
+}
